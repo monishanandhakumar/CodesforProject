@@ -1,0 +1,16 @@
+<p>taxcalculation works!</p>
+<!--<form #taxform="ngForm" (ngSubmit)="calculateTax(taxform)">
+    <p>
+        Enter Employeeid:<input type ="text" name="empidid" [(ngModel)]=empid.eid #empid=ngModel>
+    </p>
+    <p><button type="submit">Tax</button></p>
+</form>-->
+
+<form >
+    <p>
+        Enter Employeeid:<input type ="number" name="empid" #eid>
+    </p>
+    <p><button (click)="calculateTax(eid.value)">Tax</button></p>
+</form>
+
+<h2>Tax To be Payed:{{Taxamount}}</h2>

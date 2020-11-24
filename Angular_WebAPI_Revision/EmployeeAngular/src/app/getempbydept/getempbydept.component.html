@@ -1,0 +1,12 @@
+<p>getempbydept works!</p>
+<form>
+    <p>
+        Department name:<input type ="text" name="deptname"  #deptname>
+    </p>
+    <p><button (click)="getempofdept(deptname.value)">Fetch Employee</button></p>
+</form>
+
+<ul *ngFor="let e of employeedetails">
+    <li>{{e.name}}</li>
+    <li>{{e.age}}</li>
+</ul>

@@ -1,0 +1,24 @@
+<p>register works!</p>
+<form>
+    <p>
+        EmployeeId <input type="number" name="emp_id" [(ngModel)]="emp.emp_id" #emp_id=ngModel>
+       
+    </p>
+    <p>
+        EmployeeName <input type="text" name="name" [(ngModel)]="emp.name" #name=ngModel>
+       
+    </p>
+    <p>
+        Employee age <input type="text" name="age"[(ngModel)]="emp.age" #age=ngModel>
+    </p>
+    <p>
+        Employee city <input type="text" name="city" [(ngModel)]="emp.city" #city=ngModel>
+    </p>
+    <p>
+        Employee password <input type="text" name="password" [(ngModel)]="emp.password" #password=ngModel>
+    </p>
+    <p>
+        Employee phno <input type="text" name="mobile">
+    </p>
+    <p><button (click)="register()">Register</button></p>
+</form>

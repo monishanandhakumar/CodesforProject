@@ -1,0 +1,24 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">LTI Admindashboard</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a  routerLink="/home">Home</a></li>
+        <li *ngIf=admincheck><a routerLink="deptcrud" >Department</a></li>
+        <li *ngIf=admincheck><a routerLink="empcrud">Employee</a></li>
+     
+        <li *ngIf=admincheck>
+          <a (click)="logOff()">logoff</a></li>
+       
+          
+        
+      </ul>
+    </div>
+  </nav>
+  
+
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+

@@ -1,0 +1,16 @@
+<p>emplogin works!</p>
+<form #empform="ngForm">
+    <p>
+      Enter MobileNo
+        <input type="text" name="mobile" [(ngModel)]=emp.mobile #mobile=ngModel/>
+    </p>
+    <p>
+        Enter Password
+          <input type="text" name="password" [(ngModel)]=emp.password #password=ngModel/>
+      </p>
+      <p>
+     
+      <p><button (click)="doLogin()">Login</button></p>
+
+     <h3><span>{{err}}</span></h3>
+</form>
